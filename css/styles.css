@@ -1,27 +1,87 @@
 body {
   font-family: 'Barlow', sans-serif;
   font-size: 1.125rem;
+  position: relative;
 }
 
-h2, h3, input, .testimonial > .author {
+h2, h3, input, .testimonial > .author, #menuContact {
   font-family: 'Fraunces', serif;
 }
 
 header {
   position: absolute;
   top: 0;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  display: inline-block;
 }
 
 #logo {
   width: 124px;
   height: 24px;
-  background-color: teal;
 }
 
-.menu {
+nav {
+  float: right;
+}
+
+.hide {
   display: none;
+}
+
+#menu-hamburger {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+
+#menu {
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  transform: translateX(50%);
+  width: 90%;
+  text-align: center;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  padding : 2rem 0 0 0;
+}
+
+#menu::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 40px solid hsl(0, 0%, 100%);
+  position: absolute;
+  right: -1px;
+  top: -9%;
+}
+
+#menu > li {
+  padding-bottom: 2rem;
+  color: hsl(210, 4%, 67%);
+}
+
+li > a {
+  cursor: pointer;
+}
+
+li > a:hover {
+  color: hsl(213, 9%, 39%);
+}
+
+#menuContact {
+  color:hsl(0, 0%, 0%);
+  border: 1px solid hsl(51, 100%, 49%);
+  background-color: hsl(51, 100%, 49%);
+  padding: .5rem 2rem;
+  border-radius: 500px;
+  text-transform: uppercase;
 }
 
 main {
@@ -50,8 +110,8 @@ h2 {
 
 #icon-arrow {
   width: 34px;
-  height: 114px;
-  padding-bottom: 7rem;
+  height: auto;
+  padding-bottom: 8rem;
 }
 
 .main-info {

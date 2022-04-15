@@ -10,17 +10,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/menu.js"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
-  <header>
+  <header class="group">
     <h1><img id="logo" src="images/logo.svg" alt="logo - sunnyside" /></h1>
-    <ul class="menu">
-      <li>About</li>
-      <li>Services</li>
-      <li>Projects</li>
-      <li>Contact</li>
-    </ul>
+    <nav>
+      <img id="menu-hamburger" src="images/icon-hamburger.svg" alt="icon-hamburger" />
+      <ul id="menu" class="hide">
+        <li><a>About</a></li>
+        <li><a>Services</a></li>
+        <li><a>Projects</a></li>
+        <li><a id="menuContact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="main-header">
