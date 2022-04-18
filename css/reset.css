@@ -7,9 +7,9 @@ html, body, div, span, h1, h2, h3, p, a, img, header, footer, nav, section, ul, 
 }
 
 img {
-  display: inline-block;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 ul, ol {
