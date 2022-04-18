@@ -77,7 +77,6 @@ li > a:hover {
 
 #menuContact {
   color:hsl(0, 0%, 0%);
-  border: 1px solid hsl(51, 100%, 49%);
   background-color: hsl(51, 100%, 49%);
   padding: .5rem 2rem;
   border-radius: 500px;
@@ -267,41 +266,84 @@ h3 > img {
 }
 
 @media (min-width: 575px) {
+  nav {
+    width: 30%;
+  }
+
+  #menu-hamburger {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    position: initial;
+    right: initial;
+    top: initial;
+    transform: initial;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  #menu > li {
+    color: hsl(0, 0%, 100%);
+  }
+
+  #menuContact {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  #menuContact:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.25);
+  }
+
+  #menu:before {
+    display: none;
+  }
+
   .main-header {
     background-image: url('../images/desktop/image-header.jpg');
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 
   #icon-arrow {
     padding-bottom: 19rem;
   }
+
+  .infoContainer {
+    display: flex;
+  }
   
-  #image-egg, #stand-out, #photography {
+  #image-egg, #stand-out, #photography, #image-glass, #graphic-design, .main-info {
     width: 50%;
-    float: right;
   }
 
   #image-egg {
     content: url('../images/desktop/image-transform.jpg');
+    height: auto;
+    order: 2;
   }
 
   #image-glass {
     content: url('../images/desktop/image-stand-out.jpg');
-    width: 50%;
+    height: auto;
   }
 
   #graphic-design {
-    width: 50%;
-    display: inline-block;
     background-image: url('../images/desktop/image-graphic-design.jpg');
   }
 
   #photography {
-    display: inline-block;
     background-image: url('../images/desktop/image-photography.jpg');
   }
   
   .main-info {
-    width: 50%;
     text-align: left;
     padding: 8rem;
   }
@@ -311,7 +353,7 @@ h3 > img {
   }
 
   .list-testimonials {
-    padding: 9rem;
+    padding: 4rem 9rem;
   }
 
   ul {
@@ -351,7 +393,15 @@ h3 > img {
     width: 25%;
   }
 
+  #app-information > li:hover {
+    color: hsl(0, 0%, 100%);
+  }
+
   #social-medias {
     width: 20%;
+  }
+
+  #social-medias img:hover {
+    filter: brightness(0) invert(1);
   }
 }
